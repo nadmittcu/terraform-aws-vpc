@@ -1,5 +1,7 @@
 Instruction on how to build VPC
+
 Please copy paste below code
+
 module "vpc" {
     source  = "nadmittcu/vpc5/aws"
     cidr_block      = "10.0.0.0/16"
@@ -14,7 +16,10 @@ module "vpc" {
         Name = "main"
     }
 }
+
 To get the output, please add the following code
+
+
 
 output  vpc_id {
     value = module.vpc.vpc_id
